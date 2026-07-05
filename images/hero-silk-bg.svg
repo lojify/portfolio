@@ -1,0 +1,24 @@
+<svg width="1920" height="1200" viewBox="0 0 1920 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="silkBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8F7F4"/>
+      <stop offset="45%" stop-color="#EFEAE0"/>
+      <stop offset="100%" stop-color="#E4D9C4"/>
+    </linearGradient>
+    <linearGradient id="silkFold1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C5A059" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#C5A059" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#C5A059" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softBlur"><feGaussianBlur stdDeviation="40"/></filter>
+  </defs>
+  <rect width="1920" height="1200" fill="url(#silkBase)"/>
+  <g filter="url(#softBlur)" opacity="0.8">
+    <path d="M-100 300 C 400 150, 800 500, 1300 250 S 2200 350, 2400 200 L2400 0 L-100 0 Z" fill="url(#silkFold1)"/>
+    <path d="M-100 900 C 500 700, 900 1050, 1400 800 S 2100 950, 2400 750 L2400 1200 L-100 1200 Z" fill="url(#silkFold1)"/>
+  </g>
+  <g opacity="0.05">
+    <path d="M0 500 Q480 420 960 520 T1920 480" stroke="#1C1C1C" stroke-width="1" fill="none"/>
+    <path d="M0 620 Q480 700 960 600 T1920 660" stroke="#1C1C1C" stroke-width="1" fill="none"/>
+  </g>
+</svg>
