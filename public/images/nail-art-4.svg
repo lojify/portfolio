@@ -1,0 +1,28 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nailGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E4C888"/>
+      <stop offset="55%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#9C7C3C"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.04 0"/>
+    </filter>
+    </defs>
+  <rect width="900" height="1100" fill="#F8F7F4"/>
+  <g transform="rotate(-10 300 480)">
+    <path d="M170.0 698.4
+             C 170.0 402.0 216.8 220.0 300 220.0
+             C 383.2 220.0 430.0 402.0 430.0 698.4
+             C 430.0 740.0 170.0 740.0 170.0 698.4 Z"
+          fill="url(#nailGrad)" stroke="#1C1C1C" stroke-opacity="0.06" stroke-width="1"/>
+    </g><g transform="rotate(10 600 520)">
+    <path d="M470.0 738.4
+             C 470.0 442.0 516.8 260.0 600 260.0
+             C 683.2 260.0 730.0 442.0 730.0 738.4
+             C 730.0 780.0 470.0 780.0 470.0 738.4 Z"
+          fill="url(#nailGrad)" stroke="#1C1C1C" stroke-opacity="0.06" stroke-width="1"/>
+    </g><line x1="450" y1="150" x2="450" y2="950" stroke="#1C1C1C" stroke-width="1" opacity="0.06"/>
+  <rect width="900" height="1100" filter="url(#grain)" opacity="0.6"/>
+</svg>
